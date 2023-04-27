@@ -1,0 +1,96 @@
+/* Style Nav Header Start  */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #D8D8D8;
+    height: 35px;
+}
+
+.datenow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav span {
+    font-size: 12px;
+    margin-right: 15px;
+    color: rgb(243, 27, 63)
+}
+
+/* Style Nav Header End  */
+
+/* ================================================================== */
+/* Style Navbar Start  */
+
+.navbar {
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar .leftNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar .leftNav .logo img {
+    width: 125px;
+}
+.navbar .rightNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .rightNav .userIcon, .navbar .rightNav .cartIcon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navbar .rightNav .cartIcon {
+    margin-left: 30px;
+}
+.navbar .rightNav .userIcon img {
+    width: 20px;
+}
+.navbar .rightNav .cartIcon img {
+    width: 20px;
+}
+.navbar .rightNav .userIcon button {
+    border: none;
+    background-color: white;
+}
+.navbar .rightNav .cartIcon button {
+    border: none;
+    background-color: white;
+}
+.navbar .rightNav .userIcon button img {
+    width: 15px;
+}
+.navbar .rightNav .cartIcon button img {
+    width: 15px;
+}
+.navbar .menu {
+    margin-left: 50px;
+}
+.navbar .search {
+    margin-left: 50px;
+}
+.navbar .user {
+    right: 0;
+    margin-right: 230px;
+    position: absolute;
+}
+.navbar .cart {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+/* Style Navbar End  */
+/* ================================================================== */

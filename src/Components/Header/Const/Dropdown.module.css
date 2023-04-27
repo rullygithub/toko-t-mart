@@ -1,0 +1,91 @@
+.dropdown {
+    position: relative;
+    z-index: 99;
+    margin-left: 50px;
+}
+.dropdown button {
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(241, 238, 238);
+}
+.dropdown button span img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.dropdown .menuListDropdown {
+    position: absolute;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #e1e1e1;
+    top:30px;
+    padding: 15px;
+    border-radius: 5px;
+    border:1px solid rgb(221, 214, 214);
+}
+
+.dropdown .menuListDropdown li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+.dropdown .menuListDropdown li a {
+    color: #303030;
+    font-size: 14px;
+    text-decoration: none;
+}
+.dropdown .menuListDropdown li a:hover {
+    color:red;
+}
+
+
+.dropdownUser {
+    border:1px solid rgb(227, 224, 224);
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+.dropdownUser h3 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.dropdownUser .btnLog__user a,
+.dropdownUser .btnReg__user a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    
+}
+.dropdownUser .btnLog__user {
+    width: 80%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid rgb(20, 219, 66);
+    background-color: rgb(20, 219, 66);
+    padding: 5px 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.dropdownUser .btnReg__user {
+    width: 80%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #ec2222;
+    
+    padding: 5px 20px;
+    background-color: #ec2222;
+}
