@@ -1,0 +1,43 @@
+.background {
+    background-image: url(../../assets/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.search form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search form input {
+
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 30px;
+}
+.search form button {
+    width: 100px;
+    height: 100%;
+    border: none;
+    background-color: rgb(252, 42, 42);
+    color: white;
+    border: 1px solid rgb(252, 42, 42);
+    cursor: pointer;
+}
+.search form button img {
+    width: 20px;
+}

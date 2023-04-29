@@ -5,6 +5,7 @@ import Contact from '../Pages/Contact'
 import NotFound from '../Pages/NotFound'
 import Nav from '../Components/Header/Nav';
 import Navbar from '../Components/Header/Navbar';
+import Background from '../Components/Search/Background';
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
     <div>
     <Nav/>
     <Navbar/>
+    <Background/>
     </div>
     <Router>
       <Routes>
@@ -20,6 +22,7 @@ const Main = () => {
         <Route path="*" Component={NotFound} />
       </Routes>
      </Router>
+     
     </>
   )
 }

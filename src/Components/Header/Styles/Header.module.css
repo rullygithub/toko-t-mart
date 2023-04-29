@@ -27,13 +27,14 @@
 /* Style Navbar Start  */
 
 .navbar {
-    height: 90px;
+    height: 70px;
     background-color: rgb(255, 255, 255);
     padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+
 }
 .navbar .leftNav {
     display: flex;
