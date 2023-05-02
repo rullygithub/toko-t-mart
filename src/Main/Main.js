@@ -6,6 +6,7 @@ import NotFound from '../Pages/NotFound'
 import Nav from '../Components/Header/Nav';
 import Navbar from '../Components/Header/Navbar';
 import Background from '../Components/Search/Background';
+import Carousel from '../Components/SliderCarousel/Carousel';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
     <Nav/>
     <Navbar/>
     <Background/>
+    <Carousel/>
     </div>
     <Router>
       <Routes>
