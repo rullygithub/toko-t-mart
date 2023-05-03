@@ -1,0 +1,30 @@
+.category_box {
+    border: 1px solid red;
+}
+
+.swipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .swipe-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .swipe-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .swipe-item img {
+    max-width: 100%;
+  }
+  
+  .swipe-buttons {
+    margin-top: 20px;
+  }

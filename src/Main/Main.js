@@ -7,8 +7,25 @@ import Nav from '../Components/Header/Nav';
 import Navbar from '../Components/Header/Navbar';
 import Background from '../Components/Search/Background';
 import Carousel from '../Components/SliderCarousel/Carousel';
+import Category from '../Components/Category/Category';
 
 const Main = () => {
+
+  const items = [
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Product 1'
+    },
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Product 2'
+    },
+    {
+      image: 'https://via.placeholder.com/150',
+      title: 'Product 3'
+    }
+  ];
+
   return (
     <>
     <div>
@@ -16,6 +33,7 @@ const Main = () => {
     <Navbar/>
     <Background/>
     <Carousel/>
+    <Category items={items}/>
     </div>
     <Router>
       <Routes>

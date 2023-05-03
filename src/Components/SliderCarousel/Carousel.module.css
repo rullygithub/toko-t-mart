@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:30px
+    gap:30px;
+    background-color: rgb(35, 35, 31);
 }
 .carousel {
    position: relative;
@@ -33,7 +34,21 @@
 .text__info_banner {
     width: 300px;
     height: 480px;
-    border: 1px solid rgb(209, 198, 198);
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border-radius: 5px;
+}
+
+.topBanner {
+    border:1px solid rgb(207, 202, 202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.topBanner h3 {
+    text-align: center;
+    font-size: 14px;
 }
