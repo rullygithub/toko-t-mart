@@ -11,20 +11,20 @@ import Category from '../Components/Category/Category';
 
 const Main = () => {
 
-  const items = [
-    {
-      image: 'https://via.placeholder.com/150',
-      title: 'Product 1'
-    },
-    {
-      image: 'https://via.placeholder.com/150',
-      title: 'Product 2'
-    },
-    {
-      image: 'https://via.placeholder.com/150',
-      title: 'Product 3'
-    }
-  ];
+  // const items = [
+  //   {
+  //     image: 'https://via.placeholder.com/150',
+  //     title: 'Product 1'
+  //   },
+  //   {
+  //     image: 'https://via.placeholder.com/150',
+  //     title: 'Product 2'
+  //   },
+  //   {
+  //     image: 'https://via.placeholder.com/150',
+  //     title: 'Product 3'
+  //   }
+  // ];
 
   return (
     <>
@@ -33,7 +33,7 @@ const Main = () => {
     <Navbar/>
     <Background/>
     <Carousel/>
-    <Category items={items}/>
+    {/* <Category/> */}
     </div>
     <Router>
       <Routes>
