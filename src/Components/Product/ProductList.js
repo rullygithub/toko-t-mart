@@ -1,38 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import Product from './Product';
-
+import React, { useEffect, useState } from "react";
+import Product from "./Product";
+import axios from "axios";
+import classes from './Product.module.css';
+ 
 function ProductList() {
+  const [products, setProducts] = useState([]);
+  const [error, setError] = useState(null);
 
-    const [products, setProducts] = useState([]);
-    const [error, setError] = useState(null);
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/albums/1/photos")
+      .then((response) => {
+        console.log(response);
+        setProducts(response.data)
+      });
+  }, []);
 
-    useEffect(() => {
-        fetch('www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
-        .then(response => {
-            if(!response.ok) {
-                throw new Error('Failed to fetch products');
-            }
-            return response.json();
-        })
-        .then(data => setProducts(data))
-        .catch(error => setError(error))
-    }, []);
-
-    if(error) {
-        return <div>{error.message}</div>
-    }
+  if (error) {
+    return <div>{error.message}</div>;
+  }
 
   return (
-    <div>
-        {products.map(product => (
-            <Product
-                key={product.idMeal}
-                name={product.strMeal}
-                image={product.image}
-            />
-        ))}
+    <div className={classes.box_products}>
+      {products.map((product) => (
+        <Product
+          key={product.id}
+          name={product.title}
+          image={product.thumbnailUrl}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default ProductList
+export default ProductList;

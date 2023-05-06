@@ -1,0 +1,18 @@
+.box_products {
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+.product_card {
+    border:1px solid rgb(220, 219, 219);
+    border-radius: 5px;
+}
+
+.product_card .product__img {
+    width: 100%;
+}
+.product_card .product__img img {
+    width: 100%;
+    object-fit: cover;
+}
